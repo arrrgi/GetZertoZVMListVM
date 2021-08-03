@@ -6,7 +6,7 @@
 try {
     $zertoZVMIP = Read-Host "Please enter the IP address of the ZVM to connect to"
     if ([string]::IsNullOrWhiteSpace($zertoZVMIP)) {
-        $zertoZVMIP = ‘localhost’
+        $zertoZVMIP = 'localhost'
     }
     else {
         [IPAddress] $zertoZVMIP 
@@ -21,7 +21,7 @@ $zertoZVMPort = Read-Host "Please enter the Zerto ZVM API TCP port to connect to
 ### if no port was entered, use the default
 if ([string]::IsNullOrWhiteSpace($zertoZVMPort))
 {
-    $zertoZVMPort = ‘9669’
+    $zertoZVMPort = '9669'
 }
 
 $credentialType = [System.Management.Automation.PSCredentialTypes]::Domain
